@@ -38,4 +38,16 @@ open the terminal and run the following commands
             }
         }
 
-7. Functionality of this  project can be extended to get, update, delete.
+7. Update the message using the curl call
+        curl --location --request POST 'http://127.0.0.1:8000/api/delete/message/<message_id>/' \
+        --header 'Authorization: Token <token>' \
+        --header 'Content-Type: application/json' \
+        --data-raw '{"body":"message of the body"}'
+
+8. Delete the message using the curl call.
+        curl --location --request DELETE 'http://127.0.0.1:8000/api/delete/message/<message_id>/' \
+        --header 'Authorization: Token <token>'
+
+9. To get information about the message
+        curl --location --request GET 'http://127.0.0.1:8000/api/get/message/<message_id>/' \
+        --header 'Authorization: Token <token>'
