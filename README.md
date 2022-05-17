@@ -1,5 +1,8 @@
 TOKEN BASED AUTHENTICATION
 
+Technology stack: Python, django
+Knowledge required: Postman, curl, python, django, REST API's
+
 This project's purpose is to demonstrate token based authentication using django rest framework.
 
 Steps to run this project:
